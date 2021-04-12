@@ -1,0 +1,41 @@
+div {
+}
+P {
+}
+h1 {
+}
+ul {
+  padding: 5px;
+  margin: 0px;
+  list-style: none;
+  overflow: hidden;
+  background-color: whitesmoke;
+  font-size: 24px;
+}
+
+
+nav {
+    background-color: whitesmoke;
+    margin: 0px;
+    padding: 8px;
+    resize: both;
+    overflow: auto;
+    width: calc(100% - 16px);
+}
+nav a{
+    padding: 5px;
+    margin: 5px;
+    border-color: black;
+    border-style:solid;
+    color: #2a2a2a;
+}
+body{
+    background-color: #244178;
+}
+.box1{
+color: #2a2a2a;
+
+}
+.box2{
+
+}
