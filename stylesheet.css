@@ -1,41 +1,100 @@
-div {
-}
-P {
-}
-h1 {
-}
-ul {
-  padding: 5px;
-  margin: 0px;
-  list-style: none;
-  overflow: hidden;
-  background-color: whitesmoke;
-  font-size: 24px;
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 
-nav {
-    background-color: whitesmoke;
-    margin: 0px;
-    padding: 8px;
-    resize: both;
-    overflow: auto;
-    width: calc(100% - 16px);
-}
-nav a{
-    padding: 5px;
-    margin: 5px;
-    border-color: black;
-    border-style:solid;
-    color: #2a2a2a;
-}
-body{
-    background-color: #244178;
-}
-.box1{
-color: #2a2a2a;
+/*the main header that takes up the whole screen */
 
+.header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #101010;
 }
-.box2{
 
+
+/*where the content is stored */
+
+.innerheader {
+    width: 95%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* the container for my name*/
+
+.Name {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+
+/* the actual logo*/
+
+.Name h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 200;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* getting the Taubes to look Thicc*/
+
+.Name h1 span {
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* styling for the ul and its children */
+
+.navigation {
+    float: right;
+    height: 100%;
+}
+
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* making the links go as far to the right as possible*/
+
+.navigation a:last-child {
+    padding-right: 0;
+}
+
+
+/* just general body stuff*/
+
+body {
+    background-color: #203E76;
+    width: 100%;
+    height: 100vh;
 }
