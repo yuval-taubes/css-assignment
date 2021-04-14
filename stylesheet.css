@@ -1,110 +1,140 @@
-        * {
-            padding: 0px;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: Poppins, Helvetica, sans-serif;
-            list-style: none;
-            text-decoration: none;
-            font-family: 'Poppins', sans-serif;
-        }
-        /*the main header that takes up the whole screen */
-        
-        .header {
-            width: 100%;
-            height: 80px;
-            display: block;
-            background-color: #101010;
-        }
-        /*where the content is stored */
-        
-        .innerheader {
-            width: 95%;
-            height: 100%;
-            display: block;
-            margin: 0 auto;
-        }
-        /* the container for my name*/
-        
-        .Name {
-            height: 100%;
-            display: table;
-            float: left;
-        }
-        /* the actual logo*/
-        
-        .Name h1 {
-            color: white;
-            height: 100%;
-            display: table-cell;
-            vertical-align: middle;
-            font-weight: 200;
-            font-size: 30px;
-            font-family: 'Poppins', sans-serif;
-        }
-        /* getting the Taubes to look Thicc*/
-        
-        .Name h1 span {
-            font-weight: 800;
-            font-family: 'Poppins', sans-serif;
-        }
-        /* styling for the ul and its children */
-        
-        .navigation {
-            float: right;
-            height: 100%;
-        }
-        
-        .navigation a {
-            height: 100%;
-            display: table;
-            float: left;
-            padding: 0px 20px;
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        .navigation a li {
-            display: table-cell;
-            vertical-align: middle;
-            height: 100%;
-            color: white;
-            font-size: 20px;
-            font-family: 'Poppins', sans-serif;
-        }
-        /* making the links go as far to the right as possible*/
-        
-        .navigation a:last-child {
-            padding-right: 0;
-        }
-        /* just general body stuff*/
-        
-        body {
-            background-color: #203E76;
-            width: 100%;
-            height: 100vh;
-        }
-        /* tutorial on flex boxes ( https://www.youtube.com/watch?v=FTlczfR82mQ )*/
-        
-        .flex-container {
-            background-color: DodgerBlue;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            justify-content: space-evenly;
-        }
-        
-        .profile-text {
-            background-color: #f1f1f1;
-            width: 100px;
-            margin: 20px;
-            margin-top: 10px;
-            text-align: center;
-            line-height: 75px;
-            font-size: 30px;
-        }
-        
-        .flex-container>div>img {
-            padding: 20px;
-            padding-bottom: 10px;
-            display: inline-block;
-        }
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/*the main header that takes up the whole screen */
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #101010;
+}
+
+/*where the content is stored */
+
+.innerheader {
+    width: 95%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* the container for my name*/
+
+.Name {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+/* the actual logo*/
+
+.Name h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 200;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* getting the Taubes to look Thicc*/
+
+.Name h1 span {
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+}
+
+/* styling for the ul and its children */
+
+.navigation {
+    float: right;
+    height: 100%;
+}
+
+.navigation li {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.navigation li a {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    padding-left: 5px ;
+    padding-right: 5px;
+}
+
+/* making the links go as far to the right as possible*/
+
+.navigation a:last-child {
+    padding-right: 0;
+}
+
+/* just general body stuff*/
+
+body {
+    background-color: #203e76;
+    width: 100%;
+    height: 100vh;
+}
+
+/* tutorial on flex boxes ( https://www.youtube.com/watch?v=FTlczfR82mQ )*/
+
+.flex-container {
+    background-color: #696969;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 60%;
+}
+
+.profile-text {
+    background-color: #f1f1f1;
+    width: 550px;
+    height: 90%;
+    margin: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.profile-picture {
+    padding: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+    height: 400px;
+    width: auto;
+}
+
+/* the a hover, focus and visited effects*/
+li:hover {
+    background-color: #c4c4c4;
+    color: #101010;
+}
+
+.navigation li a:visited {
+    color: #203e76;
+}
+
+.navigation li a:focus {
+    background-color: #c4c4c4;
+    color: #101010;
+}
