@@ -10,7 +10,45 @@
     <!-- importing a font called poppins (Mr. Coppens said he like it to)-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
-    <style></style>
+    <style>
+body{
+    background-color: #203e76;
+    width: 100%;
+    height: 100vh;
+}
+
+.projects {
+    background-color: #696969;
+    display: flex;
+    align-items: center;
+    margin: 20px 10%;
+    border-radius: 25px;
+}
+
+/* this is styling for the text in the project */
+.project-texts {
+    background-color: #f1f1f1;
+    margin: 20px;
+    padding: 22px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+    text-align: center;
+    flex: 50%;
+    min-width: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.project-picture{
+    display: inline-block;
+    width: 50%;
+    flex: 50%;
+    padding: 20px;
+}
+
+    </style>
 </head>
 
 <body>
@@ -43,10 +81,35 @@
         </nav>
     </header>
 
+    <!--This is my list of projects which I have worked on-->
     <main>
-        <div class="project1">
-            <div class="projectpic1">picture</div>
-            <div class="projecttext1"> text</div>
+        <div class="projects">
+                <img src = "Curves.png" class="project-picture" />
+            <div class="project-texts">
+                <h1> 2D game, Curves</h1> </br>
+                At the end of my software developer course,
+                I was tasked to create a game with a partner. This project was worth 20%
+                of our grade, and I think we went above and beyond to create our game. 
+            </div>
+        </div>
+
+        <div class="projects">
+                <img src = "NFC_Amiibo_cards.jpg" class="project-picture" />
+            <div class="project-texts">
+                <h1> NFC touch cards</h1> </br>
+                I created a NFC card which will link people to my WIFI when touched to a NFC
+                phone. I also created an NFC card which will mimic and Amiibo 
+            </div>
+        </div>
+
+        <div class="projects">
+                <img src = "3D_unity_game.png" class="project-picture" />
+            <div class="project-texts">
+               <h1> 3D Parkour Game</h1> </br>
+               I was tasked to make a 3D game and present it as a project for my school.
+                I decided to create a first-person parkour game. After lots of code and time,
+                I had finished it and I was proud of the end result. 
+            </div>
         </div>
     </main>
 </body>

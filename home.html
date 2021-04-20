@@ -10,7 +10,50 @@
     <!-- importing a font called poppins (Mr. Coppens said he like it to)-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
-    <style></style>
+    <style>
+/* tutorial on flex boxes ( https://www.youtube.com/watch?v=FTlczfR82mQ )*/
+
+.flex-container {
+    /* background-color: #a1a1a1; */
+    display: flex;
+    align-items: center;
+    margin: 20px 5%;
+    border-radius: 25px;
+    position: absolute;
+}
+
+.profile-text {
+    background-color: #f1f1f1;
+    margin: 20px;
+    padding: 22px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 24px;
+    text-align: center;
+    flex: 50%;
+    min-width: 0;
+    word-break: break-word;
+    border-radius: 25px;
+    
+    align-self: stretch;
+    
+    display: flex;
+    align-items: center;
+}
+
+
+
+.profile-picture {
+    padding: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+    height: 100%;
+    flex: 50%;
+    min-width: 0;
+    border-radius: 40px;
+}
+
+    </style>
 </head>
 
 <body>
@@ -45,7 +88,7 @@
 
     <main>
         <div class="flex-container">
-            <div><img src="pictureofme.jpg" class="profile-picture" /></div>
+            <img src="pictureofme.jpg" class="profile-picture" />
             <div class="profile-text">
                 Hello, I am Yuval. I am 15 years old and currently a student attending the PTEC program.
                  I enjoy school and the challenges it brings to me.I also attend the Royal Canadian Air Cadets.

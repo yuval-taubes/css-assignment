@@ -1,10 +1,16 @@
+/* some general code for the entire website */
 * {
     padding: 0px;
     margin: 0;
     box-sizing: border-box;
-    font-family: Poppins, Helvetica, sans-serif;
     list-style: none;
     text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 40px;
     font-family: "Poppins", sans-serif;
 }
 
@@ -16,10 +22,12 @@
     height: 80px;
     display: block;
     background-color: #101010;
+    position: sticky;
+    top: 0;
 }
 
 
-/*where the content is stored */
+/*where the content for the nav is stored */
 
 .innerheader {
     width: 95%;
@@ -101,41 +109,6 @@ body {
     height: 100vh;
 }
 
-
-/* tutorial on flex boxes ( https://www.youtube.com/watch?v=FTlczfR82mQ )*/
-
-.flex-container {
-    background-color: #696969;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    width: 60%;
-}
-
-.profile-text {
-    background-color: #f1f1f1;
-    width: 600px;
-    height: 90%;
-    margin: 20px;
-    padding: 22px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 24px;
-    text-align: center;
-
-}
-
-.profile-picture {
-    padding: 20px;
-    padding-bottom: 10px;
-    display: inline-block;
-    height: 450px;
-    width: auto;
-}
-
-
 /* the a hover, focus and visited effects*/
 
 li:hover {
@@ -152,20 +125,3 @@ li:hover {
     color: #101010;
 }
 
-
-/* this is for a css grid to my understanding they are similar to flex boxes, so I decided to use one of each for the project, to determine a favorite
-(w3 page for css grids https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_layout_named)*/
-
-.project1 {
-    display: grid;
-    grid-gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
-}
-
-.project1>div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-}
