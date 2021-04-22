@@ -22,7 +22,7 @@ h1{
     height: 80px;
     display: block;
     background-color: #101010;
-    position: sticky;
+    position: fixed;
     top: 0;
 }
 
@@ -117,7 +117,7 @@ li:hover {
 }
 
 .navigation li a:visited {
-    color: #203e76;
+    /* decided that I did not like the blue link color */
 }
 
 .navigation li a:focus {

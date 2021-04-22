@@ -2,26 +2,30 @@
 <html>
 
 <head>
-    <title>filler</title>
+    <title>Home</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+
+    <!-- linking my stylesheet for some universal syling -->
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
     <!-- importing a font called poppins (Mr. Coppens said he like it to)-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
     <style>
-/* tutorial on flex boxes ( https://www.youtube.com/watch?v=FTlczfR82mQ )*/
 
+/* tutorial on flex boxes ( https://www.youtube.com/watch?v=FTlczfR82mQ )*/
 .flex-container {
-    /* background-color: #a1a1a1; */
     display: flex;
     align-items: center;
     margin: 20px 5%;
+    margin-top: 100px;
+    /* makes the edges round */
     border-radius: 25px;
-    position: absolute;
+    position: absolute;  
 }
 
+/* the paragraph text in the home page */
 .profile-text {
     background-color: #f1f1f1;
     margin: 20px;
@@ -30,30 +34,39 @@
     line-height: 30px;
     font-size: 24px;
     text-align: center;
+    /* sets the flexible length on items */
     flex: 50%;
     min-width: 0;
+    /* breaks off words so that it does not overflow */
     word-break: break-word;
+    /* makes the edges round */
     border-radius: 25px;
-    
+    /* makes the element stretch to the container  */
     align-self: stretch;
-    
+    /* makes it a flex box */
     display: flex;
+    /* aligns the items in it to the center */
     align-items: center;
+    box-shadow: 10px 10px #676767;
+    
 }
 
 
-
+/* the picture of me in front of a tree */
 .profile-picture {
     padding: 20px;
     padding-bottom: 10px;
     display: inline-block;
     height: 100%;
+    /* sets the flexible length on items */
     flex: 50%;
     min-width: 0;
+    /* makes the edges round */
     border-radius: 40px;
+
 }
 
-    </style>
+</style>
 </head>
 
 <body>
@@ -72,12 +85,15 @@
                     <!-- the other links for the navigation-->
                     <ul class="navigation">
                         <li>
+                            <!-- link to the page we are at, can be used to reload it -->
                             <a href="home.html"> Home </a>
                         </li>
                         <li>
+                            <!-- link to the projects page -->
                             <a href="projects.html"> Projects </a>
                         </li>
                         <li>
+                            <!-- link to the animation -->
                             <a href="index.html"> Animation :) </a>
                         </li>
                     </ul>
@@ -88,8 +104,9 @@
 
     <main>
         <div class="flex-container">
-            <img src="pictureofme.jpg" class="profile-picture" />
+            <img src="pictureofme.jpg" class="profile-picture" alt = "A Picture of Yuval standing in front of a tree" />
             <div class="profile-text">
+                <!-- general introduction text -->
                 Hello, I am Yuval. I am 15 years old and currently a student attending the PTEC program.
                  I enjoy school and the challenges it brings to me.I also attend the Royal Canadian Air Cadets.
                   I have many intrests spanning many different topics, but some of my favorite are computers, cars, video games, and anime. If you need to contact me feel free to leave me an email at yuval.taubes@gmail.com

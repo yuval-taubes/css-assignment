@@ -2,9 +2,10 @@
 <html>
 
 <head>
-    <title>filler</title>
+    <title>Project</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+    <!-- linking my stylesheet for some universal syling -->
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
     <!-- importing a font called poppins (Mr. Coppens said he like it to)-->
@@ -18,11 +19,28 @@ body{
 }
 
 .projects {
-    background-color: #696969;
+    
+    background-color: #676767;
+    /* makes it a flexbox */
     display: flex;
+    /* aligns the items in it to the center */
     align-items: center;
     margin: 20px 10%;
+    /* makes the edges round */
     border-radius: 25px;
+}
+
+#project1 {
+    
+    background-color: #676767;
+    /* makes it a flexbox */
+    display: flex;
+    /* aligns the items in it to the center */
+    align-items: center;
+    margin: 20px 10%;
+    /* makes the edges round */
+    border-radius: 25px;
+    margin-top: 110px;
 }
 
 /* this is styling for the text in the project */
@@ -33,17 +51,19 @@ body{
     text-align: center;
     line-height: 25px;
     font-size: 20px;
-    text-align: center;
+    /* sets the flexible length on items */
     flex: 50%;
     min-width: 0;
     height: 100%;
     width: 100%;
+    /* makes the edges round */
     border-radius: 25px;
 }
 
 .project-picture{
     display: inline-block;
     width: 50%;
+    /* sets the flexible length on items */
     flex: 50%;
     padding: 20px;
 }
@@ -83,8 +103,8 @@ body{
 
     <!--This is my list of projects which I have worked on-->
     <main>
-        <div class="projects">
-                <img src = "Curves.png" class="project-picture" />
+        <div id="project1">
+                <img src = "Curves.png" class="project-picture" alt = " a picture of my game curves"/>
             <div class="project-texts">
                 <h1> 2D game, Curves</h1> </br>
                 At the end of my software developer course,
@@ -94,7 +114,7 @@ body{
         </div>
 
         <div class="projects">
-                <img src = "NFC_Amiibo_cards.jpg" class="project-picture" />
+                <img src = "NFC_Amiibo_cards.jpg" class="project-picture" alt = "some nfc cards, looks similar to white credit cardss"/>
             <div class="project-texts">
                 <h1> NFC touch cards</h1> </br>
                 I created a NFC card which will link people to my WIFI when touched to a NFC
