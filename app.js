@@ -1,3 +1,7 @@
+//this file is used for the svg animation
+
+
+
 // Tutorial https://www.youtube.com/watch?v=vJNVramny9k
 
 
