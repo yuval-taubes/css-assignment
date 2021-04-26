@@ -114,10 +114,11 @@ body {
 li:hover {
     background-color: #c4c4c4;
     color: #101010;
+    padding: 5px;
 }
 
 .navigation li a:visited {
-    /* decided that I did not like the blue link color */
+    /* you had said that we only needed to include a visited, if there waas not enough contrast on the website */
 }
 
 .navigation li a:focus {
